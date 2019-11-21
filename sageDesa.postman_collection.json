@@ -1,10 +1,525 @@
 {
 	"info": {
-		"_postman_id": "cd389faf-e91e-4243-9f02-df4b02b4bff8",
+		"_postman_id": "25851be0-1a05-444f-a0fc-54307866371d",
 		"name": "sageDesa",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "1_remoto",
+			"item": [
+				{
+					"name": "SYS_000",
+					"item": [
+						{
+							"name": "SYS_001",
+							"item": [
+								{
+									"name": "001_mostrar bd",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_001/database",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_001",
+												"database"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "002_ingresar",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "c2e58321-017e-4b8a-9c8d-11e2984e6ba5",
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "id_database",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "cod_user",
+													"value": "ADMIN",
+													"type": "text"
+												},
+												{
+													"key": "passw",
+													"value": "123",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_001/ingresar",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_001",
+												"ingresar"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "003_validar-user",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "id_database",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "cod_user",
+													"value": "ADMIN",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_001/validar-user",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_001",
+												"validar-user"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "004_registar-contra",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MSwiYWR1c2NvZHUiOiJTQUdFIiwiYWR1c25vbWIiOiJTQUdFU09GVCIsImFkdXNlbWFpIjoidXNlckBnYW1pbC5jb20iLCJhZHVzdGVsZiI6IjMtNTY5ODM2IiwiYWR1c3RlbG0iOiI3NTM5ODYyNCIsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzEyNDU0MDMsImV4cCI6MTU3MTMzMTgwM30.8PmSZQJP5S4C2Nd9D08DCh92iN_jKzlx0kUlRPR9YO0",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "id_database",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "cod_user",
+													"value": "SAGE",
+													"type": "text"
+												},
+												{
+													"key": "passw1",
+													"value": "123",
+													"type": "text"
+												},
+												{
+													"key": "passw2",
+													"value": "1234",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_001/registrar-contra",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_001",
+												"registrar-contra"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "005_reset-contra",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MSwiYWR1c2NvZHUiOiJTQUdFIiwiYWR1c25vbWIiOiJTQUdFU09GVCIsImFkdXNlbWFpIjoidXNlckBnYW1pbC5jb20iLCJhZHVzdGVsZiI6IjMtNTY5ODM2IiwiYWR1c3RlbG0iOiI3NTM5ODYyNCIsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzEyNDU0MDMsImV4cCI6MTU3MTMzMTgwM30.8PmSZQJP5S4C2Nd9D08DCh92iN_jKzlx0kUlRPR9YO0",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "id_database",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "cod_user",
+													"value": "ADMIN",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_001/reset-contra",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_001",
+												"reset-contra"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "006_renovarToken",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhZHVzY29kdSI6IkFETUlOIiwiYWR1c25vbWIiOiJBRE1JTklTVFJBRE9SIiwiYWR1c2VtYWkiOm51bGwsImFkdXN0ZWxmIjpudWxsLCJhZHVzdGVsbSI6bnVsbCwiYWR1c3NleG8iOjEsImlhdCI6MTU3NDM2MDE2MCwiZXhwIjoxNTc0NDQ2NTYwfQ.9V9O6umYTTT_WsAbOJ-HpDd9PZ7UeYmw7TdRh0rLkqA",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_001/renovartoken",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_001",
+												"renovartoken"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "007_salir",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/x-www-form-urlencoded"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MSwiYWR1c2NvZHUiOiJBRE1JTiIsImFkdXNub21iIjoiQURNSU5JU1RSQURPUiIsImFkdXNlbWFpIjpudWxsLCJhZHVzdGVsZiI6bnVsbCwiYWR1c3RlbG0iOm51bGwsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzQzNjA4MzIsImV4cCI6MTU3NDQ0NzIzMn0.pdLOoxrZAHwk2jzDlB3yhGo5yuJ8WX9CmU9VIo-38zI"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_001/salir",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_001",
+												"salir"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "SYS_002",
+							"item": [
+								{
+									"name": "001_cargar-menu",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "d10d2a32-2ec0-4b90-8fc5-8ef3a267045d",
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MSwiYWR1c2NvZHUiOiJBRE1JTiIsImFkdXNub21iIjoiQURNSU5JU1RSQURPUiIsImFkdXNlbWFpIjpudWxsLCJhZHVzdGVsZiI6bnVsbCwiYWR1c3RlbG0iOm51bGwsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzQzNjA4MzIsImV4cCI6MTU3NDQ0NzIzMn0.pdLOoxrZAHwk2jzDlB3yhGo5yuJ8WX9CmU9VIo-38zI",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_002/cargar-menu",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_002",
+												"cargar-menu"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "002_cargar-favorito",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MSwiYWR1c2NvZHUiOiJBRE1JTiIsImFkdXNub21iIjoiQURNSU5JU1RSQURPUiIsImFkdXNlbWFpIjpudWxsLCJhZHVzdGVsZiI6bnVsbCwiYWR1c3RlbG0iOm51bGwsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzQzNjA4MzIsImV4cCI6MTU3NDQ0NzIzMn0.pdLOoxrZAHwk2jzDlB3yhGo5yuJ8WX9CmU9VIo-38zI",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_002/cargar-favoritos",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_002",
+												"cargar-favoritos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "003_eliminar-favorito",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/x-www-form-urlencoded"
+											},
+											{
+												"key": "Authorization",
+												"type": "text",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MSwiYWR1c2NvZHUiOiJBRE1JTiIsImFkdXNub21iIjoiQURNSU5JU1RSQURPUiIsImFkdXNlbWFpIjpudWxsLCJhZHVzdGVsZiI6bnVsbCwiYWR1c3RlbG0iOm51bGwsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzQzNjA4MzIsImV4cCI6MTU3NDQ0NzIzMn0.pdLOoxrZAHwk2jzDlB3yhGo5yuJ8WX9CmU9VIo-38zI"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "id_favorito",
+													"value": "45",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_002/eliminar-favoritos",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_002",
+												"eliminar-favoritos"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "004_agregar-favorito",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/x-www-form-urlencoded",
+												"type": "text"
+											},
+											{
+												"key": "Authorization",
+												"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MSwiYWR1c2NvZHUiOiJBRE1JTiIsImFkdXNub21iIjoiQURNSU5JU1RSQURPUiIsImFkdXNlbWFpIjpudWxsLCJhZHVzdGVsZiI6bnVsbCwiYWR1c3RlbG0iOm51bGwsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzQzNjA4MzIsImV4cCI6MTU3NDQ0NzIzMn0.pdLOoxrZAHwk2jzDlB3yhGo5yuJ8WX9CmU9VIo-38zI",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "id_favorito",
+													"value": "45",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "https://sage-back.herokuapp.com/sys_000/sys_002/agregar-favoritos",
+											"protocol": "https",
+											"host": [
+												"sage-back",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"sys_000",
+												"sys_002",
+												"agregar-favoritos"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
 		{
 			"name": "2_local",
 			"item": [
