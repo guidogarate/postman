@@ -1,0 +1,5 @@
+1.- Token
+    Cuando el usuario sale del sistema y vuelve a realizar
+    una consulta con el mismo token.
+    esto tiene que ser denegado, que no pueda realizar consulta.
+

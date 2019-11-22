@@ -1,0 +1,22 @@
+1.- sys_002_cargaMenu
+		muestra todos los menu habilitado para el usuario.
+	peticion POST
+		parametros------> token
+
+2.- sys_002_cargaFavo
+		muestra todos las funciones(componentes) habilitado 
+		para el usuario en el sistema.
+	peticion POST
+		parametros------> token
+
+3.- sys_002_elimiFavo
+		usuario tiene la accion de eliminar como favorito
+		a una funcion(componente) del sistema
+	peticion POST
+		parametros------> token
+
+4.- sys_002_agregFavo
+		usuario tiene la accion de agregar como favorito
+		a una funcion(componente) del sistema
+	peticion POST
+		parametros------> token

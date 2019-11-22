@@ -1,0 +1,64 @@
+
+1.- sys_001_leerbd
+	muestra todas las base de datos disponebles
+	peticion POST
+
+2.- sys_001_ingre
+	peticion POST
+	parametros
+		id_database,---->si el id_database NO EXISTE, devuelve:
+				 messagge: "Base de datos no encontrada"
+		cod_user,   ---->si el cod_user NO EXISTE, devuelve:
+				 messagge: "usuario no encontrado"
+			    ---->si el cod_user EXISTE y esta en sesion, devuelve:
+				 messagge: "se encuentra en sesion",{debe cerrar
+				 sesion para ingresar}
+		passw	    ---->si el passw NO EXISTE o ingresar por primera vez, devuelve:
+				 messagge: "ingresar contraseña",{debe ingresar una nueva contraseña}
+	
+	token----->este campo es generado cuando el usuario ingresar al sistema
+		   con este token el usuario tendra acceso para gestionar el sistema.
+
+3.- sys_001_veriusr
+	peticion POST
+	parametros
+		id_database,		---->si el id_database NO EXISTE, devuelve:
+				 		messagge: "Base de datos no encontrada"
+		cod_user,		---->si el cod_user NO EXISTE, devuelve:
+				 		messagge: "usuario no encontrado"
+
+
+4.- sys_001_salir
+	peticion POST
+	parametros
+		token        ---->si el token NO EXISTE, devuelve:
+				   messagge: "usuario no encontrado",
+				  para cerrar sesion debe tener su token, esto se encuentra
+				  en la cabezera Authorization
+
+5.- sys_001_regcontra(por primera vez) cuando es null
+	peticion POST
+	parametros
+		id_database,		---->si el id_database NO EXISTE, devuelve:
+				 		messagge: "Base de datos no encontrada"
+		cod_user,		---->si el cod_user NO EXISTE, devuelve:
+				 		messagge: "usuario no encontrado"
+		passw1			---->si el passw1 NO EXISTE, devuelve:
+				 		messagge: "usuario no encontrado"
+		passw2
+
+
+6.- sys_001_resetcontra
+	peticion POST
+	parametros
+		id_database,		---->si el id_database NO EXISTE, devuelve:
+				 		messagge: "Base de datos no encontrada"
+		cod_user,		---->si el cod_user NO EXISTE, devuelve:
+				 		messagge: "usuario no encontrado"
+
+
+7.- sys_001_renotoken
+	peticion POST
+	parametros
+		token,		---->se debe enviar el token,
+					para actualizar un nuevo token.
