@@ -69,7 +69,7 @@
 										},
 										{
 											"key": "cod_user",
-											"value": "ADMIN",
+											"value": "SAGE",
 											"type": "text"
 										},
 										{
@@ -463,6 +463,96 @@
 									"path": [
 										"sys_002",
 										"agregar-favoritos"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ADM_000",
+			"item": [
+				{
+					"name": "ADM_001",
+					"item": [
+						{
+							"name": "001_mostrar-pred",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_001/mostrar-pred",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_001",
+										"mostrar-pred"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_mostrar-todo",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "indice",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_001/mostrar-todo",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_001",
+										"mostrar-todo"
 									]
 								}
 							},
