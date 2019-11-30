@@ -69,7 +69,7 @@
 										},
 										{
 											"key": "cod_user",
-											"value": "SAGE",
+											"value": "ADMIN",
 											"type": "text"
 										},
 										{
@@ -519,7 +519,7 @@
 							"response": []
 						},
 						{
-							"name": "002_mostrar-todo",
+							"name": "002_busq-pagi",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -540,19 +540,248 @@
 									"urlencoded": [
 										{
 											"key": "indice",
-											"value": "5",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "mes",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "anho",
+											"value": "2019",
 											"type": "text"
 										}
 									]
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_001/mostrar-todo",
+									"raw": "{{url}}adm_000/adm_001/busq-pagi",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_001",
-										"mostrar-todo"
+										"busq-pagi"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_paginado",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "{{token}}"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "mes",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "anho",
+											"value": "2019",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_001/paginado",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_001",
+										"paginado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_001/eliminar/2025-5-1",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_001",
+										"eliminar",
+										"2025-5-1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_agregar",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "adtcfecd",
+											"value": "2018-11-28",
+											"type": "text"
+										},
+										{
+											"key": "adtctipo",
+											"value": "6.97",
+											"type": "text"
+										},
+										{
+											"key": "adtctipc",
+											"value": "6.86",
+											"type": "text"
+										},
+										{
+											"key": "adtctipv",
+											"value": "6.97",
+											"type": "text"
+										},
+										{
+											"key": "adtccufv",
+											"value": "2.56987",
+											"type": "text"
+										},
+										{
+											"key": "adtcesta",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "adtcpred",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_001/agregar",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_001",
+										"agregar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_actualizar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "adtctipo",
+											"value": "6.97",
+											"type": "text"
+										},
+										{
+											"key": "adtctipc",
+											"value": "6.86",
+											"type": "text"
+										},
+										{
+											"key": "adtctipv",
+											"value": "6.97",
+											"type": "text"
+										},
+										{
+											"key": "adtccufv",
+											"value": "2.56987",
+											"type": "text"
+										},
+										{
+											"key": "adtcesta",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "adtcpred",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_001/actualizar/2018-11-28",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_001",
+										"actualizar",
+										"2018-11-28"
 									]
 								}
 							},
