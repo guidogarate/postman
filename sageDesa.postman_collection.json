@@ -64,7 +64,7 @@
 									"urlencoded": [
 										{
 											"key": "id_database",
-											"value": "1",
+											"value": "2",
 											"type": "text"
 										},
 										{
@@ -210,7 +210,7 @@
 									"urlencoded": [
 										{
 											"key": "id_database",
-											"value": "1",
+											"value": "2",
 											"type": "text"
 										},
 										{
@@ -467,6 +467,52 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "005_cargar-menu-favor",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d10d2a32-2ec0-4b90-8fc5-8ef3a267045d",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}sys_000/sys_002/cargar-menu-favor",
+									"host": [
+										"{{url}}sys_000"
+									],
+									"path": [
+										"sys_002",
+										"cargar-menu-favor"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"protocolProfileBehavior": {},
@@ -540,7 +586,7 @@
 									"urlencoded": [
 										{
 											"key": "indice",
-											"value": "2",
+											"value": "0",
 											"type": "text"
 										},
 										{
@@ -582,7 +628,7 @@
 									{
 										"key": "Authorization",
 										"type": "text",
-										"value": "{{token}}"
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MiwiYWR1c2NvZHUiOiJBRE1JTiIsImFkdXNub21iIjoiQURNSU5JU1RSQURPUiIsImFkdXNlbWFpIjpudWxsLCJhZHVzdGVsZiI6bnVsbCwiYWR1c3RlbG0iOm51bGwsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzU5MjU2MDMsImV4cCI6MTU3NjAxMjAwM30.fVlT80w3BbG4-LDyTsCgPpF7TP5_ZzBs0huM8XmTO0U"
 									}
 								],
 								"body": {
@@ -635,14 +681,14 @@
 									"urlencoded": []
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_001/eliminar/2025-5-1",
+									"raw": "{{url}}adm_000/adm_001/eliminar/2019-02-25",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_001",
 										"eliminar",
-										"2025-5-1"
+										"2019-02-25"
 									]
 								}
 							},
@@ -670,7 +716,7 @@
 									"urlencoded": [
 										{
 											"key": "adtcfecd",
-											"value": "2018-12-25",
+											"value": "2019-02-25",
 											"type": "text"
 										},
 										{
@@ -816,6 +862,43 @@
 									"path": [
 										"adm_001",
 										"gest-dispo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "008_gest-dispo_y_predet",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_001/gest-dispo_y_predet",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_001",
+										"gest-dispo_y_predet"
 									]
 								}
 							},
