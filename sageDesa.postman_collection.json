@@ -69,7 +69,7 @@
 										},
 										{
 											"key": "cod_user",
-											"value": "ADMIN",
+											"value": "USUARIO",
 											"type": "text"
 										},
 										{
@@ -672,13 +672,13 @@
 									{
 										"key": "Content-Type",
 										"name": "Content-Type",
-										"type": "text",
-										"value": "application/x-www-form-urlencoded"
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
 									},
 									{
 										"key": "Authorization",
 										"type": "text",
-										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZF9kYXRhYmFzZSI6MiwiYWR1c2NvZHUiOiJBRE1JTiIsImFkdXNub21iIjoiQURNSU5JU1RSQURPUiIsImFkdXNlbWFpIjpudWxsLCJhZHVzdGVsZiI6bnVsbCwiYWR1c3RlbG0iOm51bGwsImFkdXNzZXhvIjoxLCJpYXQiOjE1NzU5MjU2MDMsImV4cCI6MTU3NjAxMjAwM30.fVlT80w3BbG4-LDyTsCgPpF7TP5_ZzBs0huM8XmTO0U"
+										"value": "{{token}}"
 									}
 								],
 								"body": {
@@ -686,7 +686,7 @@
 									"urlencoded": [
 										{
 											"key": "mes",
-											"value": "2",
+											"value": "4",
 											"type": "text"
 										},
 										{
@@ -949,6 +949,88 @@
 									"path": [
 										"adm_001",
 										"gest-dispo_y_predet"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_002",
+					"item": [
+						{
+							"name": "001_get-gtion-prdos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_002/get-gestion-periodos",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_002",
+										"get-gestion-periodos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_get-prdos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_002/get-periodos/2019",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_002",
+										"get-periodos",
+										"2019"
 									]
 								}
 							},
