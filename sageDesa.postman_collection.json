@@ -170,7 +170,7 @@
 										},
 										{
 											"key": "passw2",
-											"value": "1234",
+											"value": "123",
 											"type": "text"
 										}
 									]
@@ -215,7 +215,7 @@
 										},
 										{
 											"key": "cod_user",
-											"value": "USUARIO",
+											"value": "ADMIN",
 											"type": "text"
 										}
 									]
@@ -275,8 +275,8 @@
 									{
 										"key": "Content-Type",
 										"name": "Content-Type",
-										"type": "text",
-										"value": "application/x-www-form-urlencoded"
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
 									},
 									{
 										"key": "Authorization",
@@ -1023,14 +1023,104 @@
 									"urlencoded": []
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_002/get-periodos/2019",
+									"raw": "{{url}}adm_000/adm_002/get-periodos/2017",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_002",
 										"get-periodos",
-										"2019"
+										"2017"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_agregar-gestion",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "gestion",
+											"value": "2021",
+											"type": "text"
+										},
+										{
+											"key": "descripcion",
+											"value": "Gestion 2021",
+											"type": "text"
+										},
+										{
+											"key": "actEmpresa",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "cantPeridos",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "estPeriodo",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fechaInicio",
+											"value": "2021-03-25",
+											"type": "text"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2022-03-25",
+											"type": "text"
+										},
+										{
+											"key": "gtionDefec",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "modAutomatica",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fechaModAutomatica",
+											"value": "2022-03-25",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_002/agregar-gestion",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_002",
+										"agregar-gestion"
 									]
 								}
 							},
