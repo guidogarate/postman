@@ -1058,7 +1058,7 @@
 									"urlencoded": [
 										{
 											"key": "gestion",
-											"value": "2021",
+											"value": "2022",
 											"type": "text"
 										},
 										{
@@ -1083,12 +1083,12 @@
 										},
 										{
 											"key": "fechaInicio",
-											"value": "2021-03-25",
+											"value": "2022-03-25",
 											"type": "text"
 										},
 										{
 											"key": "fechaFin",
-											"value": "2022-03-25",
+											"value": "2023-03-25",
 											"type": "text"
 										},
 										{
@@ -1121,6 +1121,174 @@
 									"path": [
 										"adm_002",
 										"agregar-gestion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_eliminar-gtion",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_002/eliminar/2022",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_002",
+										"eliminar",
+										"2022"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_actualizar-gestion",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "descripcion",
+											"value": "Gestion 2017",
+											"type": "text"
+										},
+										{
+											"key": "actEmpresa",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "cantPeridos",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "estPeriodo",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fechaInicio",
+											"value": "2022-03-25",
+											"type": "text"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-03-25",
+											"type": "text"
+										},
+										{
+											"key": "gtionDefec",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "modAutomatica",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fechaModAutomatica",
+											"value": "2022-03-25",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_002/actualizar-gestion/2017",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_002",
+										"actualizar-gestion",
+										"2017"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_actualizar-periodo",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "estPeriodo",
+											"value": "1",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_002/actualizar-perido/2017/1",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_002",
+										"actualizar-perido",
+										"2017",
+										"1"
 									]
 								}
 							},
