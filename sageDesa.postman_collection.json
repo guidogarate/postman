@@ -1271,6 +1271,16 @@
 											"key": "estPeriodo",
 											"value": "1",
 											"type": "text"
+										},
+										{
+											"key": "modAutomatica",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "fechaModAutomatica",
+											"value": "2017-03-01",
+											"type": "text"
 										}
 									],
 									"options": {
