@@ -1307,6 +1307,379 @@
 					],
 					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_003",
+					"item": [
+						{
+							"name": "001_get-aux-maestro",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_003/get-auxiliar-maestro/8",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_003",
+										"get-auxiliar-maestro",
+										"8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_get-prdos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_003/get-auxiliar-sub/8",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_003",
+										"get-auxiliar-sub",
+										"8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_agregar-gestion",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "gestion",
+											"value": "2022",
+											"type": "text"
+										},
+										{
+											"key": "descripcion",
+											"value": "Gestion 2021",
+											"type": "text"
+										},
+										{
+											"key": "actEmpresa",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "cantPeridos",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "estPeriodo",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fechaInicio",
+											"value": "2022-03-25",
+											"type": "text"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-03-25",
+											"type": "text"
+										},
+										{
+											"key": "gtionDefec",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "modAutomatica",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fechaModAutomatica",
+											"value": "2022-03-25",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_003/agregar-gestion",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_003",
+										"agregar-gestion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_eliminar-gtion",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_003/eliminar/2022",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_003",
+										"eliminar",
+										"2022"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_actualizar-gestion",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "descripcion",
+											"value": "Gestion 2017",
+											"type": "text"
+										},
+										{
+											"key": "actEmpresa",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "cantPeridos",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "estPeriodo",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fechaInicio",
+											"value": "2022-03-25",
+											"type": "text"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-03-25",
+											"type": "text"
+										},
+										{
+											"key": "gtionDefec",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "modAutomatica",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fechaModAutomatica",
+											"value": "2022-03-25",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_003/actualizar-gestion/2017",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_003",
+										"actualizar-gestion",
+										"2017"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_actualizar-periodo",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "estPeriodo",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "modAutomatica",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "fechaModAutomatica",
+											"value": "2017-03-01",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_003/actualizar-perido/2017/1",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_003",
+										"actualizar-perido",
+										"2017",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "befb4509-57a4-41e2-bf05-a6cd5b3e2846",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dae1397c-deaa-4976-aa9f-a2913a072619",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
 				}
 			],
 			"protocolProfileBehavior": {}
