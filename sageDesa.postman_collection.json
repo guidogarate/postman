@@ -69,7 +69,7 @@
 										},
 										{
 											"key": "cod_user",
-											"value": "USUARIO",
+											"value": "ADMIN",
 											"type": "text"
 										},
 										{
@@ -215,7 +215,7 @@
 										},
 										{
 											"key": "cod_user",
-											"value": "USUARIO",
+											"value": "ADMIN",
 											"type": "text"
 										}
 									]
@@ -856,25 +856,25 @@
 										},
 										{
 											"key": "adtcesta",
-											"value": "0",
+											"value": "1",
 											"type": "text"
 										},
 										{
 											"key": "adtcpred",
-											"value": "1",
+											"value": "0",
 											"type": "text"
 										}
 									]
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_001/actualizar/2018-11-28",
+									"raw": "{{url}}adm_000/adm_001/actualizar/2019-02-28",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_001",
 										"actualizar",
-										"2018-11-28"
+										"2019-02-28"
 									]
 								}
 							},
@@ -1274,12 +1274,12 @@
 										},
 										{
 											"key": "modAutomatica",
-											"value": "0",
+											"value": "1",
 											"type": "text"
 										},
 										{
 											"key": "fechaModAutomatica",
-											"value": "2017-03-01",
+											"value": "2018-03-01",
 											"type": "text"
 										}
 									],
@@ -1290,15 +1290,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_002/actualizar-perido/2019/15",
+									"raw": "{{url}}adm_000/adm_002/actualizar-perido/2018/1",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_002",
 										"actualizar-perido",
-										"2019",
-										"15"
+										"2018",
+										"1"
 									]
 								}
 							},
@@ -1479,7 +1479,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"adamcodm\":\"90\",\r\n\t\"adamtipa\":\"1\",\r\n\t\"datos\":[ \r\n\t\t\t{ \r\n\t\t\t\t\"adamidea\":\"1\",\r\n\t\t\t\t\"adamdesc\":\"MACC1\",\r\n\t\t\t\t\"adamsigl\":\"Macc1\",\r\n\t\t\t\t\"adamesta\":\"1\",\r\n\t\t\t\t\"adamsecu\":\"1\",\r\n\t\t\t\t\"adampred\":\"0\"\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"adamidea\":\"2\",\r\n\t\t\t\t\"adamdesc\":\"MACC2\",\r\n\t\t\t\t\"adamsigl\":\"Macc2\",\r\n\t\t\t\t\"adamesta\":\"0\",\r\n\t\t\t\t\"adamsecu\":\"2\",\r\n\t\t\t\t\"adampred\":\"1\"\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"adamidea\":\"3\",\r\n\t\t\t\t\"adamdesc\":\"MACC3\",\r\n\t\t\t\t\"adamsigl\":\"Macc3\",\r\n\t\t\t\t\"adamesta\":\"1\",\r\n\t\t\t\t\"adamsecu\":\"2\",\r\n\t\t\t\t\"adampred\":\"0\"\r\n\t\t\t}\r\n\t\t]\r\n}\r\n",
+									"raw": "{\r\n\t\"adamcodm\":\"90\",\r\n\t\"adamtipa\":\"1\",\r\n\t\"datos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"adamidea\":\"1\",\r\n\t\t\t\t\"adamdesc\":\"MACC1\",\r\n\t\t\t\t\"adamsigl\":\"Macc1\",\r\n\t\t\t\t\"adamesta\": true,\r\n\t\t\t\t\"adamsecu\":\"1\",\r\n\t\t\t\t\"adampred\":false\r\n\t\t\t}\r\n\t\t]\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1619,7 +1619,7 @@
 									"urlencoded": []
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_003/eliminar/90/1/2",
+									"raw": "{{url}}adm_000/adm_003/eliminar/90/2/0",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -1627,8 +1627,8 @@
 										"adm_003",
 										"eliminar",
 										"90",
-										"1",
-										"2"
+										"2",
+										"0"
 									]
 								}
 							},
@@ -1655,6 +1655,50 @@
 									""
 								]
 							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_004",
+					"item": [
+						{
+							"name": "001_get-aux-maestro",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_004/get-paraminicial1",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_004",
+										"get-paraminicial1"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"protocolProfileBehavior": {},
