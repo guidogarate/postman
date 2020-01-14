@@ -1023,14 +1023,14 @@
 									"urlencoded": []
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_002/get-periodos/2016",
+									"raw": "{{url}}adm_000/adm_002/get-periodos/2021",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_002",
 										"get-periodos",
-										"2016"
+										"2021"
 									]
 								}
 							},
@@ -1269,7 +1269,7 @@
 									"urlencoded": [
 										{
 											"key": "estPeriodo",
-											"value": "1",
+											"value": "0",
 											"type": "text"
 										},
 										{
@@ -1664,7 +1664,7 @@
 					"name": "ADM_004",
 					"item": [
 						{
-							"name": "001_get-aux-maestro",
+							"name": "001_get-paraminicial1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1732,6 +1732,120 @@
 									"path": [
 										"adm_004",
 										"get-monedas",
+										"2018"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_get-paraminicial3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_004/get-folio/2018",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_004",
+										"get-folio",
+										"2018"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_get-paraminicial4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_004/parama-espec/2018",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_004",
+										"parama-espec",
+										"2018"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_get-paraminicial6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_004/reg-maest/2018",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_004",
+										"reg-maest",
 										"2018"
 									]
 								}
