@@ -1815,6 +1815,44 @@
 							"response": []
 						},
 						{
+							"name": "005_get-paraminicial5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_004/unidad-negocio/2018",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_004",
+										"unidad-negocio",
+										"2018"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "006_get-paraminicial6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1846,6 +1884,84 @@
 									"path": [
 										"adm_004",
 										"reg-maest",
+										"2018"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "007_put-paraminicial",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"datos2\":\n\t[ \n\t\t{ \n\t\t\t\"adpicori\":\"20\",\n\t\t\t\"adpiatr1\":\"false\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"21\",\n\t\t\t\"adpiatr1\": \"1\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"22\",\n\t\t\t\"adpiatr1\": \"2\"\n\t\t}\n\t],\n\"datos3\":\n\t[ \n\t\t{ \n\t\t\t\"adpicori\": \"30\",\n\t\t\t\"adpiatr1\":\"false\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"31\",\n\t\t\t\"adpiatr1\": \"1\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"32\",\n\t\t\t\"adpiatr1\": \"true\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"34\",\n\t\t\t\"adpiatr2\": \"-\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"35\",\n\t\t\t\"adpiatr2\": \"-\"\n\t\t},\n\t\t\t{ \n\t\t\t\"adpicori\": \"36\",\n\t\t\t\"adpiatr2\": \"-\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"37\",\n\t\t\t\"adpiatr1\": \"6\"\n\t\t}\n\t],\n\"datos4\":\n\t[ \n\t\t{ \n\t\t\t\"adpicori\":\"41\",\n\t\t\t\"adpiatr1\":false\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"42\",\n\t\t\t\"adpiatr1\": false\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"43\",\n\t\t\t\"adpiatr1\": false\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"44\",\n\t\t\t\"adpiatr1\": false\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"45\",\n\t\t\t\"adpiatr1\": false\n\t\t},\n\t\t\t{ \n\t\t\t\"adpicori\": \"46\",\n\t\t\t\"adpiatr1\": false\n\t\t}\n\t],\n\t\"datos6\":\n\t[ \n\t\t{ \n\t\t\t\"adpicori\":\"61\",\n\t\t\t\"adpiatr1\":\"1\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"62\",\n\t\t\t\"adpiatr1\": \"1\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"63\",\n\t\t\t\"adpiatr1\": false\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"64\",\n\t\t\t\"adpiatr2\": \"-\"\n\t\t},\n\t\t{ \n\t\t\t\"adpicori\": \"65\",\n\t\t\t\"adpiatr1\": \"6\"\n\t\t}\n\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_004/put-paraminicial/2018",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_004",
+										"put-paraminicial",
+										"2018"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "008_get-admpaini",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_004/get-admpaini/2018",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_004",
+										"get-admpaini",
 										"2018"
 									]
 								}
