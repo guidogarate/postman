@@ -1955,14 +1955,14 @@
 									"urlencoded": []
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_004/get-admpaini/2018",
+									"raw": "{{url}}adm_000/adm_004/get-admpaini/2019",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_004",
 										"get-admpaini",
-										"2018"
+										"2019"
 									]
 								}
 							},
