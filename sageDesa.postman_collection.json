@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "25851be0-1a05-444f-a0fc-54307866371d",
+		"_postman_id": "87de3a26-b0b7-4aea-8314-daadf3cc91ef",
 		"name": "sageDesa",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -69,7 +69,7 @@
 										},
 										{
 											"key": "cod_user",
-											"value": "ADMIN",
+											"value": "USUARIO",
 											"type": "text"
 										},
 										{
@@ -109,12 +109,12 @@
 									"urlencoded": [
 										{
 											"key": "id_database",
-											"value": "1",
+											"value": "2",
 											"type": "text"
 										},
 										{
 											"key": "cod_user",
-											"value": "ADMIN",
+											"value": "USUARIO",
 											"type": "text"
 										}
 									]
@@ -155,7 +155,7 @@
 									"urlencoded": [
 										{
 											"key": "id_database",
-											"value": "1",
+											"value": "2",
 											"type": "text"
 										},
 										{
@@ -215,7 +215,7 @@
 										},
 										{
 											"key": "cod_user",
-											"value": "ADMIN",
+											"value": "USUARIO",
 											"type": "text"
 										}
 									]
@@ -1963,6 +1963,89 @@
 										"adm_004",
 										"get-admpaini",
 										"2019"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_005",
+					"item": [
+						{
+							"name": "001_getadmusrio",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_005/get-usuario/90/1/sage",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_005",
+										"get-usuario",
+										"90",
+										"1",
+										"sage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_inicializarpass",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "estado",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "codigo",
+											"value": "ADMIN2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_005/inicializar-pass",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_005",
+										"inicializar-pass"
 									]
 								}
 							},
