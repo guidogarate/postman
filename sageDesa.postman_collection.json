@@ -1269,7 +1269,7 @@
 									"urlencoded": [
 										{
 											"key": "estPeriodo",
-											"value": "0",
+											"value": "1",
 											"type": "text"
 										},
 										{
@@ -1992,7 +1992,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_005/get-usuario/90/1/sage",
+									"raw": "{{url}}adm_000/adm_005/get-usuario/90/1/all_auxma",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -2001,7 +2001,7 @@
 										"get-usuario",
 										"90",
 										"1",
-										"sage"
+										"all_auxma"
 									]
 								}
 							},
@@ -2047,6 +2047,24 @@
 										"adm_005",
 										"inicializar-pass"
 									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_007",
+					"item": [
+						{
+							"name": "001_getdatosempresa",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
 								}
 							},
 							"response": []
