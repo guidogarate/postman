@@ -2233,7 +2233,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_006/get-usuario/90/USUARIO",
+									"raw": "{{url}}adm_000/adm_006/get-usuario/90/TEST2",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -2241,7 +2241,213 @@
 										"adm_006",
 										"get-usuario",
 										"90",
-										"USUARIO"
+										"TEST2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_insertadmusrio",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "login",
+											"value": "TEST",
+											"type": "text"
+										},
+										{
+											"key": "descripcion",
+											"value": "testeo",
+											"type": "text"
+										},
+										{
+											"key": "foto",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id_grupo_acceso",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id_grupo_perfil",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id_tipo_usuario",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id_persona",
+											"value": "1250",
+											"type": "text"
+										},
+										{
+											"key": "id_usuario",
+											"value": "USUARIO",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_006/insert-usuario",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_006",
+										"insert-usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_updateadmusrio",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "login",
+											"value": "TEST2",
+											"type": "text"
+										},
+										{
+											"key": "descripcion",
+											"value": "testeo2",
+											"type": "text"
+										},
+										{
+											"key": "foto",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id_grupo_acceso",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id_grupo_perfil",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id_tipo_usuario",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "id_persona",
+											"value": "1360",
+											"type": "text"
+										},
+										{
+											"key": "id_usuario",
+											"value": "SAGE",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_006/update-usuario/TEST",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_006",
+										"update-usuario",
+										"TEST"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_deleteadmusrio",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_006/delete-usuario/TEST2?Content-Type=application/x-www-form-urlencoded&Authorization={{token}}",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_006",
+										"delete-usuario",
+										"TEST2"
+									],
+									"query": [
+										{
+											"key": "Content-Type",
+											"value": "application/x-www-form-urlencoded"
+										},
+										{
+											"key": "Authorization",
+											"value": "{{token}}"
+										}
 									]
 								}
 							},
