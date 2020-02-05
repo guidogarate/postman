@@ -2115,7 +2115,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"Av. Bolivia c/ Kantuta\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"Av. Alemana c/ Los Bibosis\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010101\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"78546952\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":34,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\": null,\r\n\t\t\t\t\"contacto\": \"Pepe Perez\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678\r\n}\r\n"
+									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"Av. Los Andes c/Pedro Murillo\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"Av. Mutualista c/46\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010101\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"78965123\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":34,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\": null,\r\n\t\t\t\t\"contacto\": \"Mariela Diaz\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678\r\n}\r\n"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_007/insert-datos-empresa",
@@ -2172,6 +2172,76 @@
 									"path": [
 										"adm_008",
 										"cerrar-sesion"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_006",
+					"item": [
+						{
+							"name": "001_getpagiadmusrio",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_006/get-usuario-paginado/90/1/all_auxma",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_006",
+										"get-usuario-paginado",
+										"90",
+										"1",
+										"all_auxma"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_getadmusrio",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_006/get-usuario/90/USUARIO",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_006",
+										"get-usuario",
+										"90",
+										"USUARIO"
 									]
 								}
 							},
