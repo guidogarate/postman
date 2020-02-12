@@ -2518,13 +2518,85 @@
 									}
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_010/insert-parametros-iniciales",
+									"raw": "{{url}}adm_000/adm_010/insert-parametros-iniciales/2019",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_010",
-										"insert-parametros-iniciales"
+										"insert-parametros-iniciales",
+										"2019"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_updateparamini",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\n{\n\t\"estructuras\":\n\t\t[ \n\t\t\t{ \n\t\t\t\t\"id_estructura\":29,\n\t\t\t\t\"nombre\":\"SUBSUBCUENTA2\",\n\t\t\t\t\"largo\":1,\n\t\t\t\t\"separador\":\"-\"\n\t\t\t}\n\t\t],\n\t\"naturalezas\":\n\t\t[ \n\t\t\t{ \n\t\t\t\t\"id_codigo\":49,\n\t\t\t\t\"id_naturaleza\":1\n\t\t\t}\n\t\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_010/update-parametros-iniciales/2019",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_010",
+										"update-parametros-iniciales",
+										"2019"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_deleteparamini",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_010/delete-parametros-iniciales/29/2019",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_010",
+										"delete-parametros-iniciales",
+										"29",
+										"2019"
 									]
 								}
 							},
