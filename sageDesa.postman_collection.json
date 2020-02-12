@@ -2477,14 +2477,54 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_010/parametros-iniciales/90",
+									"raw": "{{url}}adm_000/adm_010/parametros-iniciales/90/0",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_010",
 										"parametros-iniciales",
-										"90"
+										"90",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_insertparamini",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n\t\"estructuras\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"gestion\":2019,\r\n\t\t\t\t\"nombre\":\"SUBSUBCUENTA\",\r\n\t\t\t\t\"largo\":1,\r\n\t\t\t\t\"separador\":\"-\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"naturalezas\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_codigo\":49,\r\n\t\t\t\t\"id_naturaleza\":2\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_codigo\":50,\r\n\t\t\t\t\"id_naturaleza\":1\r\n\t\t\t}\r\n\t\t]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_010/insert-parametros-iniciales",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_010",
+										"insert-parametros-iniciales"
 									]
 								}
 							},
