@@ -766,7 +766,7 @@
 									"urlencoded": [
 										{
 											"key": "adtcfecd",
-											"value": "2019-02-25",
+											"value": "2020-02-12",
 											"type": "text"
 										},
 										{
@@ -861,20 +861,20 @@
 										},
 										{
 											"key": "adtcpred",
-											"value": "0",
+											"value": "1",
 											"type": "text"
 										}
 									]
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_001/actualizar/2019-02-28",
+									"raw": "{{url}}adm_000/adm_001/actualizar/2019-02-27",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_001",
 										"actualizar",
-										"2019-02-28"
+										"2019-02-27"
 									]
 								}
 							},
@@ -2477,7 +2477,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_010/parametros-iniciales/90/0",
+									"raw": "{{url}}adm_000/adm_010/parametros-iniciales/90/2019",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -2485,7 +2485,7 @@
 										"adm_010",
 										"parametros-iniciales",
 										"90",
-										"0"
+										"2019"
 									]
 								}
 							},
@@ -2510,7 +2510,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n\t\"estructuras\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"gestion\":2019,\r\n\t\t\t\t\"nombre\":\"SUBSUBCUENTA\",\r\n\t\t\t\t\"largo\":1,\r\n\t\t\t\t\"separador\":\"-\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"naturalezas\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_codigo\":49,\r\n\t\t\t\t\"id_naturaleza\":2\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_codigo\":50,\r\n\t\t\t\t\"id_naturaleza\":1\r\n\t\t\t}\r\n\t\t]\r\n}",
+									"raw": "\r\n{\r\n\t\"estructuras\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"nombre\":\"TEST2\",\r\n\t\t\t\t\"largo\":2,\r\n\t\t\t\t\"separador\":\"-\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"naturalezas\":\r\n\t\t[ \r\n\t\t\t\r\n\t\t]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2597,6 +2597,194 @@
 										"delete-parametros-iniciales",
 										"29",
 										"2019"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_009",
+					"item": [
+						{
+							"name": "001_getpaise",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_009/get-paises/90",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_009",
+										"get-paises",
+										"90"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_insertpaise",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "division",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "dependencia",
+											"value": "00301",
+											"type": "text"
+										},
+										{
+											"key": "descripcion",
+											"value": "Ciudad de Brasilia",
+											"type": "text"
+										},
+										{
+											"key": "sigla",
+											"value": "Ciudad de Brasilia",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_009/insert-paises",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_009",
+										"insert-paises"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_updatepaise",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "division",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "dependencia",
+											"value": "003",
+											"type": "text"
+										},
+										{
+											"key": "descripcion",
+											"value": "Sao Paulo",
+											"type": "text"
+										},
+										{
+											"key": "sigla",
+											"value": "sp",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_009/update-paises/004",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_009",
+										"update-paises",
+										"004"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_deletepaise",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_009/delete-paises/00302",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_009",
+										"delete-paises",
+										"00302"
 									]
 								}
 							},
