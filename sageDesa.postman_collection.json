@@ -2262,25 +2262,31 @@
 										"key": "Authorization",
 										"value": "{{token}}",
 										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
 									}
 								],
 								"body": {
-									"mode": "urlencoded",
-									"urlencoded": [
+									"mode": "formdata",
+									"formdata": [
 										{
 											"key": "login",
-											"value": "TEST",
+											"value": "TESTCLOUD",
 											"type": "text"
 										},
 										{
 											"key": "descripcion",
-											"value": "testeo",
+											"value": "testeocloudinary",
 											"type": "text"
 										},
 										{
 											"key": "foto",
-											"value": "test",
-											"type": "text"
+											"type": "file",
+											"src": "/C:/Users/Dev03/Desktop/test.jpg"
 										},
 										{
 											"key": "estado",
@@ -2304,13 +2310,14 @@
 										},
 										{
 											"key": "id_persona",
-											"value": "1250",
+											"value": "1500",
 											"type": "text"
 										},
 										{
-											"key": "id_usuario",
-											"value": "USUARIO",
-											"type": "text"
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
 										}
 									]
 								},
