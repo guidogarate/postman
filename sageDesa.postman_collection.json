@@ -2275,7 +2275,7 @@
 									"formdata": [
 										{
 											"key": "login",
-											"value": "TESTCLOUD",
+											"value": "TESTCLOUD2",
 											"type": "text"
 										},
 										{
@@ -2361,7 +2361,7 @@
 										},
 										{
 											"key": "descripcion",
-											"value": "testeo2",
+											"value": "testeo",
 											"type": "text"
 										},
 										{
@@ -2432,14 +2432,14 @@
 									"urlencoded": []
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_006/delete-usuario/TESTCLOUD?Content-Type=application/x-www-form-urlencoded&Authorization={{token}}",
+									"raw": "{{url}}adm_000/adm_006/delete-usuario/TESTCLOUD2?Content-Type=application/x-www-form-urlencoded&Authorization={{token}}",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_006",
 										"delete-usuario",
-										"TESTCLOUD"
+										"TESTCLOUD2"
 									],
 									"query": [
 										{
@@ -2733,12 +2733,12 @@
 										},
 										{
 											"key": "descripcion",
-											"value": "Sao Paulo",
+											"value": "Brasilia",
 											"type": "text"
 										},
 										{
 											"key": "sigla",
-											"value": "sp",
+											"value": "Brasilia",
 											"type": "text"
 										},
 										{
@@ -2749,14 +2749,14 @@
 									]
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_009/update-paises/004",
+									"raw": "{{url}}adm_000/adm_009/update-paises/00103",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_009",
 										"update-paises",
-										"004"
+										"00103"
 									]
 								}
 							},
@@ -2787,6 +2787,220 @@
 										"adm_009",
 										"delete-paises",
 										"00302"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "CON_000",
+			"item": [
+				{
+					"name": "CON_003",
+					"item": [
+						{
+							"name": "001_getunidadesorganicas",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_003/get-unidades-organicas/10/0",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_003",
+										"get-unidades-organicas",
+										"10",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_insertunidadesorganicas",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "division",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "dependencia",
+											"value": "2020002",
+											"type": "text"
+										},
+										{
+											"key": "descripcion",
+											"value": "TESTAUTO6",
+											"type": "text"
+										},
+										{
+											"key": "sigla",
+											"value": "TESTAUTO6",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "codigo",
+											"value": "auto",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_003/insert-unidades-organicas/2020",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_003",
+										"insert-unidades-organicas",
+										"2020"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_updateunidadesorganicas",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "division",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "dependencia",
+											"value": "2020002",
+											"type": "text"
+										},
+										{
+											"key": "descripcion",
+											"value": "TESTAUTOACTUALIZADO",
+											"type": "text"
+										},
+										{
+											"key": "sigla",
+											"value": "TESTAUTOACTUALIZADO",
+											"type": "text"
+										},
+										{
+											"key": "estado",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "codigo",
+											"value": "auto",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_003/update-unidades-organicas/2020/2020002007",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_003",
+										"update-unidades-organicas",
+										"2020",
+										"2020002007"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_deleteunidadesorganicas",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_003/delete-unidades-organicas/2020002010",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_003",
+										"delete-unidades-organicas",
+										"2020002010"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
 									]
 								}
 							},
