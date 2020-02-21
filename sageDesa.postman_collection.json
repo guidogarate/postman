@@ -2824,15 +2824,17 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_003/get-unidades-organicas/10/0",
+									"raw": "{{url}}con_000/con_003/get-unidades-organicas/1/10/0/all_unidades",
 									"host": [
 										"{{url}}con_000"
 									],
 									"path": [
 										"con_003",
 										"get-unidades-organicas",
+										"1",
 										"10",
-										"0"
+										"0",
+										"all_unidades"
 									]
 								}
 							},
