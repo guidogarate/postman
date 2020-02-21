@@ -2628,14 +2628,16 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_009/get-paises/90",
+									"raw": "{{url}}adm_000/adm_009/get-paises/90/1/all_paise",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_009",
 										"get-paises",
-										"90"
+										"90",
+										"1",
+										"all_paise"
 									]
 								}
 							},
