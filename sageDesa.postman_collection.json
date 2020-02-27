@@ -2056,132 +2056,6 @@
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "ADM_007",
-					"item": [
-						{
-							"name": "001_getdatosempresa",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/x-www-form-urlencoded",
-										"type": "text"
-									},
-									{
-										"key": "Authorization",
-										"value": "{{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "urlencoded",
-									"urlencoded": []
-								},
-								"url": {
-									"raw": "{{url}}adm_000/adm_007/get-datos-empresa/90",
-									"host": [
-										"{{url}}adm_000"
-									],
-									"path": [
-										"adm_007",
-										"get-datos-empresa",
-										"90"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "002_insertdatosempresa",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									},
-									{
-										"key": "Authorization",
-										"value": "{{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"Av. Los Andes c/Pedro Murillo\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"Av. Mutualista c/46\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010101\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"78965123\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":34,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\": null,\r\n\t\t\t\t\"contacto\": \"Mariela Diaz\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678\r\n}\r\n"
-								},
-								"url": {
-									"raw": "{{url}}adm_000/adm_007/insert-datos-empresa",
-									"host": [
-										"{{url}}adm_000"
-									],
-									"path": [
-										"adm_007",
-										"insert-datos-empresa"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
-				},
-				{
-					"name": "ADM_008",
-					"item": [
-						{
-							"name": "001_cerrarsesion",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/x-www-form-urlencoded",
-										"type": "text"
-									},
-									{
-										"key": "Authorization",
-										"value": "{{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "urlencoded",
-									"urlencoded": [
-										{
-											"key": "codigo",
-											"value": "ADMIN",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "{{url}}adm_000/adm_008/cerrar-sesion",
-									"host": [
-										"{{url}}adm_000"
-									],
-									"path": [
-										"adm_008",
-										"cerrar-sesion"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
-				},
-				{
 					"name": "ADM_006",
 					"item": [
 						{
@@ -2460,15 +2334,19 @@
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "ADM_010",
+					"name": "ADM_007",
 					"item": [
 						{
-							"name": "001_getparamini",
+							"name": "001_getdatosempresa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"method": "GET",
 								"header": [
 									{
 										"key": "Content-Type",
+										"name": "Content-Type",
 										"value": "application/x-www-form-urlencoded",
 										"type": "text"
 									},
@@ -2478,23 +2356,26 @@
 										"type": "text"
 									}
 								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_010/parametros-iniciales/90/2019",
+									"raw": "{{url}}adm_000/adm_007/get-datos-empresa/90",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
-										"adm_010",
-										"parametros-iniciales",
-										"90",
-										"2019"
+										"adm_007",
+										"get-datos-empresa",
+										"90"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "002_insertparamini",
+							"name": "002_insertdatosempresa",
 							"request": {
 								"method": "POST",
 								"header": [
@@ -2512,71 +2393,25 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n\t\"estructuras\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"nombre\":\"TEST2\",\r\n\t\t\t\t\"largo\":2,\r\n\t\t\t\t\"separador\":\"-\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"naturalezas\":\r\n\t\t[ \r\n\t\t\t\r\n\t\t]\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678,\r\n\t\"logo_url\": \"aqui deberia ir el logo\"\r\n}\r\n"
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_010/insert-parametros-iniciales/2019",
+									"raw": "{{url}}adm_000/adm_007/insert-datos-empresa",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
-										"adm_010",
-										"insert-parametros-iniciales",
-										"2019"
+										"adm_007",
+										"insert-datos-empresa"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "003_updateparamini",
+							"name": "003_deletedatosempresa",
 							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									},
-									{
-										"key": "Authorization",
-										"value": "{{token}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\n{\n\t\"estructuras\":\n\t\t[ \n\t\t\t{ \n\t\t\t\t\"id_estructura\":25,\n\t\t\t\t\"nombre\":\"CUENTAUPDATE\",\n\t\t\t\t\"largo\":3,\n\t\t\t\t\"separador\":\"-\"\n\t\t\t}\n\t\t],\n\t\"naturalezas\":\n\t\t[ \n\t\t\t\n\t\t]\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{url}}adm_000/adm_010/update-parametros-iniciales/2019",
-									"host": [
-										"{{url}}adm_000"
-									],
-									"path": [
-										"adm_010",
-										"update-parametros-iniciales",
-										"2019"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "004_deleteparamini",
-							"request": {
-								"method": "PUT",
+								"method": "DELETE",
 								"header": [
 									{
 										"key": "Content-Type",
@@ -2590,15 +2425,62 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_010/delete-parametros-iniciales/29/2019",
+									"raw": "{{url}}adm_000/adm_007/delete-datos-empresa/2/5",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
-										"adm_010",
-										"delete-parametros-iniciales",
-										"29",
-										"2019"
+										"adm_007",
+										"delete-datos-empresa",
+										"2",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_008",
+					"item": [
+						{
+							"name": "001_cerrarsesion",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "codigo",
+											"value": "ADMIN",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_008/cerrar-sesion",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_008",
+										"cerrar-sesion"
 									]
 								}
 							},
@@ -2797,6 +2679,155 @@
 					],
 					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_010",
+					"item": [
+						{
+							"name": "001_getparamini",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_010/parametros-iniciales/90/2019",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_010",
+										"parametros-iniciales",
+										"90",
+										"2019"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_insertparamini",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n\t\"estructuras\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"nombre\":\"TEST2\",\r\n\t\t\t\t\"largo\":2,\r\n\t\t\t\t\"separador\":\"-\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"naturalezas\":\r\n\t\t[ \r\n\t\t\t\r\n\t\t]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_010/insert-parametros-iniciales/2019",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_010",
+										"insert-parametros-iniciales",
+										"2019"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_updateparamini",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\n{\n\t\"estructuras\":\n\t\t[ \n\t\t\t{ \n\t\t\t\t\"id_estructura\":25,\n\t\t\t\t\"nombre\":\"CUENTAUPDATE\",\n\t\t\t\t\"largo\":3,\n\t\t\t\t\"separador\":\"-\"\n\t\t\t}\n\t\t],\n\t\"naturalezas\":\n\t\t[ \n\t\t\t\n\t\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_010/update-parametros-iniciales/2019",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_010",
+										"update-parametros-iniciales",
+										"2019"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_deleteparamini",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_010/delete-parametros-iniciales/29/2019",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_010",
+										"delete-parametros-iniciales",
+										"29",
+										"2019"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -2804,6 +2835,53 @@
 		{
 			"name": "CON_000",
 			"item": [
+				{
+					"name": "CON_002",
+					"item": [
+						{
+							"name": "001_getpagicatalogodecuentas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\" : 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id_naturaleza\" : 4\n\t\t\t}\n\t\t]\n}"
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/2019/all_cuentas",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_002",
+										"get-catalogo-cuentas",
+										"10",
+										"1",
+										"2019",
+										"all_cuentas"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
 				{
 					"name": "CON_003",
 					"item": [
