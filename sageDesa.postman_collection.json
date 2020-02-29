@@ -2547,22 +2547,23 @@
 									"urlencoded": [
 										{
 											"key": "division",
-											"value": "3",
+											"value": "1",
 											"type": "text"
 										},
 										{
 											"key": "dependencia",
 											"value": "00301",
-											"type": "text"
+											"type": "text",
+											"disabled": true
 										},
 										{
 											"key": "descripcion",
-											"value": "Ciudad de Brasilia",
+											"value": "Colombia",
 											"type": "text"
 										},
 										{
 											"key": "sigla",
-											"value": "Ciudad de Brasilia",
+											"value": "Colombia",
 											"type": "text"
 										},
 										{
@@ -2607,40 +2608,41 @@
 									"urlencoded": [
 										{
 											"key": "division",
-											"value": "2",
+											"value": "1",
 											"type": "text"
 										},
 										{
 											"key": "dependencia",
 											"value": "003",
-											"type": "text"
+											"type": "text",
+											"disabled": true
 										},
 										{
 											"key": "descripcion",
-											"value": "Brasilia",
+											"value": "maccPais",
 											"type": "text"
 										},
 										{
 											"key": "sigla",
-											"value": "Brasilia",
+											"value": "adsad",
 											"type": "text"
 										},
 										{
 											"key": "estado",
-											"value": "1",
+											"value": "0",
 											"type": "text"
 										}
 									]
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_009/update-paises/00103",
+									"raw": "{{url}}adm_000/adm_009/update-paises/00301",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_009",
 										"update-paises",
-										"00103"
+										"00301"
 									]
 								}
 							},
@@ -2848,6 +2850,7 @@
 								"header": [
 									{
 										"key": "Content-Type",
+										"name": "Content-Type",
 										"value": "application/json",
 										"type": "text"
 									},
@@ -2859,7 +2862,12 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\" : 1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id_naturaleza\" : 4\n\t\t\t}\n\t\t]\n}"
+									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t\n\t\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
 								},
 								"url": {
 									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/2019/all_cuentas",
@@ -2873,6 +2881,141 @@
 										"1",
 										"2019",
 										"all_cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_getcuentas",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_002/get-cuentas/10/1000000000",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_002",
+										"get-cuentas",
+										"10",
+										"1000000000"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_insertcuentas",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"gestion\": 2019,\n\t\"division\": 5,\n\t\"dependencia\": \"1010101000\",\n\t\"descripcion\": \"Caja Central M/NL 2\",\n\t\"estado\": true,\n\t\"cta_imputable\": true,\n\t\"cta_banco\": true,\n\t\"cta_flujo\": true,\n\t\"cta_modulo\": false,\n\t\"modulo\": null,\n\t\"cta_aa\": false,\n\t\"tipo_aa\": null\n}"
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_002/insert-cuentas",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_002",
+										"insert-cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_updatecuentas",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"descripcion\": \"ACTIVO ACTUALIZADO\",\n\t\"estado\": true,\n\t\"cta_imputable\": true,\n\t\"cta_banco\": true,\n\t\"cta_flujo\": true,\n\t\"cta_modulo\": true,\n\t\"modulo\": 10,\n\t\"cta_aa\": false,\n\t\"tipo_aa\": null\n}"
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_002/update-cuentas/2019/1000000000",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_002",
+										"update-cuentas",
+										"2019",
+										"1000000000"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_deletecuentas",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_002/delete-cuentas/2019/1010101000",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_002",
+										"delete-cuentas",
+										"2019",
+										"1010101000"
 									]
 								}
 							},
@@ -2902,15 +3045,15 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_003/get-unidades-organicas/1/10/0/all_unidades",
+									"raw": "{{url}}con_000/con_003/get-unidades-organicas/10/1/0/all_unidades",
 									"host": [
 										"{{url}}con_000"
 									],
 									"path": [
 										"con_003",
 										"get-unidades-organicas",
-										"1",
 										"10",
+										"1",
 										"0",
 										"all_unidades"
 									]
