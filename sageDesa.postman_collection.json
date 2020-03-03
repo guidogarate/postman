@@ -2382,7 +2382,7 @@
 									{
 										"key": "Content-Type",
 										"name": "Content-Type",
-										"value": "application/json",
+										"value": "application/x-www-form-urlencoded",
 										"type": "text"
 									},
 									{
@@ -2392,8 +2392,39 @@
 									}
 								],
 								"body": {
-									"mode": "raw",
-									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678,\r\n\t\"logo_url\": \"aqui deberia ir el logo\"\r\n}\r\n"
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "direcciones",
+											"value": "[ \n\t\t\t{ \n\t\t\t\t\"id_tipo_direccion\":1,\n\t\t\t\t\"direccion\":\"TEST\",\n\t\t\t\t\"estado\":1,\n\t\t\t\t\"id_ciudad\":\"0010201\"\n\t\t\t}\n]",
+											"type": "text"
+										},
+										{
+											"key": "contactos",
+											"value": "[ \n\t\t\t{ \n\t\t\t\t\"id_tipo_contacto\":33,\n\t\t\t\t\"id_subtipo_contacto\":1,\n\t\t\t\t\"codigo_contacto\":\"+591\",\n\t\t\t\t\"contacto\": \"TEST\",\n\t\t\t\t\"estado\":1\n\t\t\t}\n\t\t]",
+											"type": "text"
+										},
+										{
+											"key": "razon_social",
+											"value": "ORMATE S.R.L.",
+											"type": "text"
+										},
+										{
+											"key": "sigla",
+											"value": "ORMATE S.R.L.",
+											"type": "text"
+										},
+										{
+											"key": "id_actividad",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "nit",
+											"value": "2345678",
+											"type": "text"
+										}
+									]
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_007/insert-datos-empresa",
@@ -2434,6 +2465,45 @@
 										"delete-datos-empresa",
 										"2",
 										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_insertlogoempresa",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "logo",
+											"type": "file",
+											"src": "/C:/Users/Dev03/Desktop/testPerson.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_007/insert-logo-empresa",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_007",
+										"insert-logo-empresa"
 									]
 								}
 							},
