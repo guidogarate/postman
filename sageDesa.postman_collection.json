@@ -2870,7 +2870,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/2019/all_cuentas",
+									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/2019/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -2880,7 +2880,7 @@
 										"10",
 										"1",
 										"2019",
-										"all_cuentas"
+										"all_data"
 									]
 								}
 							},
@@ -2968,7 +2968,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"descripcion\": \"ACTIVO ACTUALIZADO\",\n\t\"estado\": true,\n\t\"cta_imputable\": true,\n\t\"cta_banco\": true,\n\t\"cta_flujo\": true,\n\t\"cta_modulo\": true,\n\t\"modulo\": 10,\n\t\"cta_aa\": false,\n\t\"tipo_aa\": null\n}"
+									"raw": "{\n\t\"descripcion\": \"ACTIVO ACTUALIZADO\",\n\t\"estado\": true,\n\t\"cta_imputable\": true,\n\t\"cta_banco\": true,\n\t\"cta_flujo\": true,\n\t\"cta_modulo\": true,\n\t\"modulo\": 10,\n\t\"cta_aa\": true,\n\t\"tipo_aa\": 3\n}"
 								},
 								"url": {
 									"raw": "{{url}}con_000/con_002/update-cuentas/2019/1000000000",
@@ -3030,11 +3030,15 @@
 					"item": [
 						{
 							"name": "001_getunidadesorganicas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"method": "GET",
 								"header": [
 									{
 										"key": "Content-Type",
+										"name": "Content-Type",
 										"value": "application/x-www-form-urlencoded",
 										"type": "text"
 									},
@@ -3044,8 +3048,12 @@
 										"type": "text"
 									}
 								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
 								"url": {
-									"raw": "{{url}}con_000/con_003/get-unidades-organicas/10/1/0/all_unidades",
+									"raw": "{{url}}con_000/con_003/get-unidades-organicas/10/1/0/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3055,7 +3063,7 @@
 										"10",
 										"1",
 										"0",
-										"all_unidades"
+										"all_data"
 									]
 								}
 							},
