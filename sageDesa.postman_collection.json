@@ -2014,6 +2014,7 @@
 								"header": [
 									{
 										"key": "Content-Type",
+										"name": "Content-Type",
 										"value": "application/x-www-form-urlencoded",
 										"type": "text"
 									},
@@ -2024,19 +2025,13 @@
 									}
 								],
 								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "estado",
-											"value": "true",
-											"type": "text"
-										},
-										{
-											"key": "codigo",
-											"value": "ADMIN2",
-											"type": "text"
+									"mode": "raw",
+									"raw": "{\n\t\"codigo\": \"USUARIO\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
 										}
-									]
+									}
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_005/inicializar-pass",
@@ -2393,7 +2388,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678,\r\n\t\"logo_url\": \"aqui deberia ir el logo\"\r\n}\r\n",
+									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678,\r\n\t\"logo_url\": \"aqui deberia ir el logo\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2512,7 +2507,7 @@
 									"urlencoded": [
 										{
 											"key": "codigo",
-											"value": "ADMIN",
+											"value": "USUARIO",
 											"type": "text"
 										}
 									]
@@ -2591,28 +2586,32 @@
 									"urlencoded": [
 										{
 											"key": "division",
-											"value": "1",
+											"value": "2",
 											"type": "text"
 										},
 										{
 											"key": "dependencia",
-											"value": "00301",
-											"type": "text",
-											"disabled": true
+											"value": "003",
+											"type": "text"
 										},
 										{
 											"key": "descripcion",
-											"value": "Colombia",
+											"value": "Tierra del Fuego",
 											"type": "text"
 										},
 										{
 											"key": "sigla",
-											"value": "Colombia",
+											"value": "TESTAUTO",
 											"type": "text"
 										},
 										{
 											"key": "estado",
 											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "codigo",
+											"value": "auto",
 											"type": "text"
 										}
 									]
@@ -2652,23 +2651,22 @@
 									"urlencoded": [
 										{
 											"key": "division",
-											"value": "1",
+											"value": "3",
 											"type": "text"
 										},
 										{
 											"key": "dependencia",
-											"value": "003",
-											"type": "text",
-											"disabled": true
+											"value": "00403",
+											"type": "text"
 										},
 										{
 											"key": "descripcion",
-											"value": "maccPais",
+											"value": "Santa Cruz de la Sierra",
 											"type": "text"
 										},
 										{
 											"key": "sigla",
-											"value": "adsad",
+											"value": "scz",
 											"type": "text"
 										},
 										{
@@ -2679,14 +2677,14 @@
 									]
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_009/update-paises/00301",
+									"raw": "{{url}}adm_000/adm_009/update-paises/0040301",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_009",
 										"update-paises",
-										"00301"
+										"0040301"
 									]
 								}
 							},
@@ -2709,14 +2707,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_009/delete-paises/00302",
+									"raw": "{{url}}adm_000/adm_009/delete-paises/007",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_009",
 										"delete-paises",
-										"00302"
+										"007"
 									]
 								}
 							},
@@ -3339,7 +3337,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_004/get-cuenta-adicional/10/5",
+									"raw": "{{url}}con_000/con_004/get-cuenta-adicional/10/6",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3347,7 +3345,7 @@
 										"con_004",
 										"get-cuenta-adicional",
 										"10",
-										"5"
+										"6"
 									]
 								}
 							},
@@ -3381,6 +3379,71 @@
 									"path": [
 										"con_004",
 										"insert-cuenta-adicional"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_updatecuentaadicional",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"descripcion_tipocuenta\": \"TESTFINAL\",\n\t\"sigla_tipocuenta\": \"TESTFINAL\",\n\t\"estado_tipocuenta\" : true,\n\t\"cuentas_adicionales\" : [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"1\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"2\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL2\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL2\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"3\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL3\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL3\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n}"
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_004/update-cuenta-adicional/6",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_004",
+										"update-cuenta-adicional",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_deletecuentaadicional",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_004/delete-cuenta-adicional/5/2",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_004",
+										"delete-cuenta-adicional",
+										"5",
+										"2"
 									]
 								}
 							},
