@@ -2707,14 +2707,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_009/delete-paises/007",
+									"raw": "{{url}}adm_000/adm_009/delete-paises/00305",
 									"host": [
 										"{{url}}adm_000"
 									],
 									"path": [
 										"adm_009",
 										"delete-paises",
-										"007"
+										"00305"
 									]
 								}
 							},
@@ -2864,6 +2864,163 @@
 										"delete-parametros-iniciales",
 										"29",
 										"2019"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_011",
+					"item": [
+						{
+							"name": "001_getclasedocumentos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_011/get-clase-documentos/90/1/0/all_data",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_011",
+										"get-clase-documentos",
+										"90",
+										"1",
+										"0",
+										"all_data"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_insertclasedocumentos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id_modulo\": 90,\n\t\"id_documento\": \"10\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"componente\": \"adm_test\",\n\t\"estado\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_011/insert-clase-documentos",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_011",
+										"insert-clase-documentos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_updateclasedocumentos",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"descripcion\": \"TESTACTUA\",\n\t\"sigla\": \"TESTACTUA\",\n\t\"componente\": \"con_TESTACTUA\",\n\t\"estado\": false\n}"
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_011/update-clase-documentos/10/4",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_011",
+										"update-clase-documentos",
+										"10",
+										"4"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_deleteclasedocumentos",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_011/delete-clase-documentos/10/5",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_011",
+										"delete-clase-documentos",
+										"10",
+										"5"
 									]
 								}
 							},
@@ -3143,12 +3300,12 @@
 										},
 										{
 											"key": "descripcion",
-											"value": "TESTAUTOFINAL",
+											"value": "TESTAUTOFINAL2",
 											"type": "text"
 										},
 										{
 											"key": "sigla",
-											"value": "TESTAUTOFINAL",
+											"value": "TESTAUTOFINAL2",
 											"type": "text"
 										},
 										{
