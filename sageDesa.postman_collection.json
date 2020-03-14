@@ -3029,6 +3029,182 @@
 					],
 					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ADM_012",
+					"item": [
+						{
+							"name": "001_getpagiformatosimpresion",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_012/get-formatos-impresion/90/1/0/all_data",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_012",
+										"get-formatos-impresion",
+										"90",
+										"1",
+										"0",
+										"all_data"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "002_getformatoimpresion",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_012/get-formato-impresion/90/10/3",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_012",
+										"get-formato-impresion",
+										"90",
+										"10",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_insertformatosimpresion",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id_modulo\": 10,\n\t\"id_formato\": \"auto\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"tamaño_impresion\": 2,\n\t\"moneda\": 1,\n\t\"codigo_cuenta\": 3,\n\t\"numero_copias\": 3,\n\t\"codigo_qr\": true,\n\t\"logo_empresa\": true,\n\t\"estado\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_012/insert-formatos-impresion",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_012",
+										"insert-formatos-impresion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_updateformatosimpresion",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"descripcion\": \"TESTACTUALIZADO\",\n\t\"sigla\": \"TESTACTUALIZADO\",\n\t\"tamaño_impresion\": 1,\n\t\"moneda\": null,\n\t\"codigo_cuenta\": 1,\n\t\"numero_copias\": 1,\n\t\"codigo_qr\": false,\n\t\"logo_empresa\": false,\n\t\"estado\": false\n}"
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_012/update-formatos-impresion/10/6",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_012",
+										"update-formatos-impresion",
+										"10",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_deleteformatosimpresion",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_012/delete-formatos-impresion/10/4",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_012",
+										"delete-formatos-impresion",
+										"10",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -3252,7 +3428,7 @@
 									"urlencoded": []
 								},
 								"url": {
-									"raw": "{{url}}con_000/con_003/get-unidades-organicas/10/2/0/all_data",
+									"raw": "{{url}}con_000/con_003/get-unidades-organicas/10/1/0/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3260,7 +3436,7 @@
 										"con_003",
 										"get-unidades-organicas",
 										"10",
-										"2",
+										"1",
 										"0",
 										"all_data"
 									]
@@ -3355,16 +3531,6 @@
 									"mode": "urlencoded",
 									"urlencoded": [
 										{
-											"key": "division",
-											"value": "2",
-											"type": "text"
-										},
-										{
-											"key": "dependencia",
-											"value": "2020002",
-											"type": "text"
-										},
-										{
 											"key": "descripcion",
 											"value": "TESTAUTOACTUALIZADO",
 											"type": "text"
@@ -3378,23 +3544,17 @@
 											"key": "estado",
 											"value": "1",
 											"type": "text"
-										},
-										{
-											"key": "codigo",
-											"value": "auto",
-											"type": "text"
 										}
 									]
 								},
 								"url": {
-									"raw": "{{url}}con_000/con_003/update-unidades-organicas/2020/2020002007",
+									"raw": "{{url}}con_000/con_003/update-unidades-organicas/2020002007",
 									"host": [
 										"{{url}}con_000"
 									],
 									"path": [
 										"con_003",
 										"update-unidades-organicas",
-										"2020",
 										"2020002007"
 									]
 								}
