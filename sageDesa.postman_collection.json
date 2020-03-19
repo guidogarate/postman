@@ -3259,7 +3259,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_013/get-tipo-transaccion/90/1/10",
+									"raw": "{{url}}adm_000/adm_013/get-tipo-transaccion/90/10/5",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -3267,8 +3267,107 @@
 										"adm_013",
 										"get-tipo-transaccion",
 										"90",
-										"1",
-										"10"
+										"10",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_inserttipostransaccion",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id_modulo\": 10,\n\t\"id_tipotran\": \"auto\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"id_clase_documento\": 2,\n\t\"id_codigo_transaccion\": 1,\n\t\"id_moneda\": 2,\n\t\"cantidad_lineas\": 3,\n\t\"comprobante_estandar\": 1,\n\t\"duplicado\": true,\n\t\"id_rol\": 1,\n\t\"documento_preliminar\": 1,\n\t\"id_formato_impresion\": 1,\n\t\"estado\": true\n}"
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_013/insert-tipos-transaccion",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_013",
+										"insert-tipos-transaccion"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_updatetipostransaccion",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"descripcion\": \"TESTUPDATE\",\n\t\"sigla\": \"TESTUPDATE\",\n\t\"id_clase_documento\": 3,\n\t\"id_codigo_transaccion\": 2,\n\t\"id_moneda\": 1,\n\t\"cantidad_lineas\": 310,\n\t\"comprobante_estandar\": 2,\n\t\"duplicado\": false,\n\t\"id_rol\": 2,\n\t\"documento_preliminar\": 2,\n\t\"id_formato_impresion\": 2,\n\t\"estado\": false\n}"
+								},
+								"url": {
+									"raw": "{{url}}adm_000/adm_013/update-tipos-transaccion/10/5",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_013",
+										"update-tipos-transaccion",
+										"10",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_deletetipostransaccion",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_013/delete-tipos-transaccion/10/3",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_013",
+										"delete-tipos-transaccion",
+										"10",
+										"3"
 									]
 								}
 							},
