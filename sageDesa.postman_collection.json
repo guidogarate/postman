@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "87de3a26-b0b7-4aea-8314-daadf3cc91ef",
+		"_postman_id": "7b7c218e-9d91-41a0-a20a-b2837b66c5f9",
 		"name": "sageDesa",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -2969,7 +2969,7 @@
 									"raw": "{\n\t\"descripcion\": \"TESTACTUA\",\n\t\"sigla\": \"TESTACTUA\",\n\t\"componente\": \"con_TESTACTUA\",\n\t\"estado\": false\n}"
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_011/update-clase-documentos/10/4",
+									"raw": "{{url}}adm_000/adm_011/update-clase-documentos/10/4?",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -3749,7 +3749,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_003/delete-unidades-organicas/2020002010",
+									"raw": "{{url}}con_000/con_003/delete-unidades-organicas/2020002010?",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3825,7 +3825,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_004/get-cuenta-adicional/10/1",
+									"raw": "{{url}}con_000/con_004/get-cuenta-adicional/10/6",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3833,7 +3833,7 @@
 										"con_004",
 										"get-cuenta-adicional",
 										"10",
-										"1"
+										"6"
 									]
 								}
 							},
@@ -3857,7 +3857,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"id_tipocuenta\": \"6\",\n\t\"descripcion\": \"TESTFINAL\",\n\t\"sigla\": \"TESTFINAL\",\n\t\"estado\" : true,\n\t\"cuentas_adicionales\" : [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"1\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"2\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL2\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL2\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n}"
+									"raw": "{\n\t\"id_tipocuenta\": \"auto\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"estado\" : true,\n\t\"cuentas_adicionales\" : [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"auto\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TEST\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TEST\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"auto\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TEST\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TEST\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"auto\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TEST\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TEST\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n}"
 								},
 								"url": {
 									"raw": "{{url}}con_000/con_004/insert-cuenta-adicional",
@@ -3890,7 +3890,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"descripcion\": \"TESTFINAL\",\n\t\"sigla\": \"TESTFINAL\",\n\t\"estado\" : true,\n\t\"cuentas_adicionales\" : [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"1\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"2\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL2\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL2\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"3\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL3\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL3\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n}"
+									"raw": "{\n\t\"descripcion\": \"TESTFINAL\",\n\t\"sigla\": \"asdasd\",\n\t\"estado\" : true,\n\t\"cuentas_adicionales\" : [\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"auto\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"asdasd\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"3\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL3\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL3\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\"id_cuenta\": \"7\",\n\t\t\t\t\t\t\t\t\t\"descripcion\": \"TESTFINAL3\",\n\t\t\t\t\t\t\t\t\t\"sigla\": \"TESTFINAL3\",\n\t\t\t\t\t\t\t\t\t\"estado\": true\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t]\n}"
 								},
 								"url": {
 									"raw": "{{url}}con_000/con_004/update-cuenta-adicional/6",
@@ -3922,16 +3922,18 @@
 										"type": "text"
 									}
 								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"cuentas\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"id_tipocuenta\": \"6\",\n\t\t\t\t\t\t\"id_cuenta\": \"1\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"id_tipocuenta\": \"6\",\n\t\t\t\t\t\t\"id_cuenta\": \"2\"\n\t\t\t\t\t}\n\t\t\t\t]\n}"
+								},
 								"url": {
-									"raw": "{{url}}con_000/con_004/delete-cuenta-adicional/5/2",
+									"raw": "{{url}}con_000/con_004/delete-cuenta-adicional",
 									"host": [
 										"{{url}}con_000"
 									],
 									"path": [
 										"con_004",
-										"delete-cuenta-adicional",
-										"5",
-										"2"
+										"delete-cuenta-adicional"
 									]
 								}
 							},
