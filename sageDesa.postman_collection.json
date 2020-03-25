@@ -3408,7 +3408,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t\n\t\t]\n}",
+									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\": \"1\"\n\t\t\t}\n\t\t]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3449,7 +3449,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_002/get-cuentas/10/1000000000",
+									"raw": "{{url}}con_000/con_002/get-cuentas/10/501000",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3457,7 +3457,7 @@
 										"con_002",
 										"get-cuentas",
 										"10",
-										"1000000000"
+										"501000"
 									]
 								}
 							},
@@ -3481,7 +3481,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"gestion\": 2019,\n\t\"division\": 5,\n\t\"dependencia\": \"1010101000\",\n\t\"descripcion\": \"Caja Central M/NL 2\",\n\t\"estado\": true,\n\t\"cta_imputable\": true,\n\t\"cta_banco\": true,\n\t\"cta_flujo\": true,\n\t\"cta_modulo\": false,\n\t\"modulo\": null,\n\t\"cta_aa\": false,\n\t\"tipo_aa\": null\n}"
+									"raw": "{\n\t\"codigo\": \"501000\",\n\t\"gestion\": 2019,\n\t\"division\": 2,\n\t\"descripcion\": \"COSTOS TEST\",\n\t\"estado\": true,\n\t\"cta_imputable\": true,\n\t\"cta_banco\": true,\n\t\"cta_flujo\": true,\n\t\"cta_modulo\": false,\n\t\"modulo\": null,\n\t\"cta_aa\": false,\n\t\"tipo_aa\": null\n}"
 								},
 								"url": {
 									"raw": "{{url}}con_000/con_002/insert-cuentas",
@@ -3825,7 +3825,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_004/get-cuenta-adicional/10/6",
+									"raw": "{{url}}con_000/con_004/get-cuenta-adicional/10/10",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3833,7 +3833,7 @@
 										"con_004",
 										"get-cuenta-adicional",
 										"10",
-										"6"
+										"10"
 									]
 								}
 							},
@@ -3924,7 +3924,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"cuentas\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"id_tipocuenta\": \"6\",\n\t\t\t\t\t\t\"id_cuenta\": \"1\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"id_tipocuenta\": \"6\",\n\t\t\t\t\t\t\"id_cuenta\": \"2\"\n\t\t\t\t\t}\n\t\t\t\t]\n}"
+									"raw": "{\n\t\"cuentas\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"id_tipocuenta\": \"10\",\n\t\t\t\t\t\t\"id_cuenta\": \"0\"\n\t\t\t\t\t}\n\t\t\t\t]\n}"
 								},
 								"url": {
 									"raw": "{{url}}con_000/con_004/delete-cuenta-adicional",
