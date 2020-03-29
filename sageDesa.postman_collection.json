@@ -3825,7 +3825,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_004/get-cuenta-adicional/10/10",
+									"raw": "{{url}}con_000/con_004/get-cuenta-adicional/10/23032",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3833,7 +3833,7 @@
 										"con_004",
 										"get-cuenta-adicional",
 										"10",
-										"10"
+										"23032"
 									]
 								}
 							},
@@ -3934,6 +3934,46 @@
 									"path": [
 										"con_004",
 										"delete-cuenta-adicional"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "CON_005",
+					"item": [
+						{
+							"name": "001_getpagitiposcomprobantes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_005/get-tipos-comprobantes/10/1/10/all_data",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_005",
+										"get-tipos-comprobantes",
+										"10",
+										"1",
+										"10",
+										"all_data"
 									]
 								}
 							},
