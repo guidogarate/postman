@@ -3996,7 +3996,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_005/get-tipo-comprobante/10/10/1",
+									"raw": "{{url}}con_000/con_005/get-tipo-comprobante/10/10/4",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -4005,7 +4005,106 @@
 										"get-tipo-comprobante",
 										"10",
 										"10",
-										"1"
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "003_inserttipocomprobante",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id_modulo\" : \"10\",\n\t\"id_comprobante\": \"auto\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"tipo_transaccion\": \"1\",\n\t\"formato_impresion\": \"2\",\n\t\"estado\": true\n}"
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_005/insert-tipo-comprobante",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_005",
+										"insert-tipo-comprobante"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "004_updatetipocomprobante",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"descripcion\": \"ACTU\",\n\t\"sigla\": \"aACTU\",\n\t\"tipo_transaccion\": \"2\",\n\t\"formato_impresion\": \"1\",\n\t\"estado\": false\n}"
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_005/update-tipo-comprobante/10/4",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_005",
+										"update-tipo-comprobante",
+										"10",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "005_deletetipocomprobante",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_005/delete-tipo-comprobante/10/6",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_005",
+										"delete-tipo-comprobante",
+										"10",
+										"6"
 									]
 								}
 							},
