@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "7b7c218e-9d91-41a0-a20a-b2837b66c5f9",
+		"_postman_id": "5b947ea0-a95a-4a71-a38f-6de3207f87bd",
 		"name": "sageDesa",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -302,7 +302,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -565,11 +564,9 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "ADM_000",
@@ -955,7 +952,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1106,12 +1102,7 @@
 											"value": "2022-03-25",
 											"type": "text"
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_002/agregar-gestion",
@@ -1226,12 +1217,7 @@
 											"value": "2015-03-25",
 											"type": "text"
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_002/actualizar-gestion/2015",
@@ -1282,12 +1268,7 @@
 											"value": "2018-03-01",
 											"type": "text"
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_002/actualizar-perido/2018/1",
@@ -1305,7 +1286,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1440,12 +1420,7 @@
 											"type": "text",
 											"disabled": true
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_003/agregar-auxiliar-maestro",
@@ -1479,12 +1454,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"adamcodm\":\"90\",\r\n\t\"adamtipa\":\"1\",\r\n\t\"datos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"adamidea\":\"1\",\r\n\t\t\t\t\"adamdesc\":\"MACC1\",\r\n\t\t\t\t\"adamsigl\":\"Macc1\",\r\n\t\t\t\t\"adamesta\": true,\r\n\t\t\t\t\"adamsecu\":\"1\",\r\n\t\t\t\t\"adampred\":false\r\n\t\t\t}\r\n\t\t]\r\n}\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "{\r\n\t\"adamcodm\":\"90\",\r\n\t\"adamtipa\":\"1\",\r\n\t\"datos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"adamidea\":\"1\",\r\n\t\t\t\t\"adamdesc\":\"MACC1\",\r\n\t\t\t\t\"adamsigl\":\"Macc1\",\r\n\t\t\t\t\"adamesta\": true,\r\n\t\t\t\t\"adamsecu\":\"1\",\r\n\t\t\t\t\"adampred\":false\r\n\t\t\t}\r\n\t\t]\r\n}\r\n"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_003/agregar-auxiliar-sub",
@@ -1534,12 +1504,7 @@
 											"value": "1",
 											"type": "text"
 										}
-									],
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									]
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_003/actualizar-auxiliar-maestro/90/1",
@@ -1575,12 +1540,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "[ \r\n\t{ \r\n\t\t\"adamidea\":\"1\",\r\n\t\t\"adamdesc\":\"postman MACC1\",\r\n\t\t\"adamsigl\":\"postman Macc1\",\r\n\t\t\"adamesta\":\"1\",\r\n\t\t\"adamsecu\":\"1\",\r\n\t\t\"adampred\":\"0\"\r\n\t},\r\n\t{ \r\n\t\t\"adamidea\":\"2\",\r\n\t\t\"adamdesc\":\"MACC2\",\r\n\t\t\"adamsigl\":\"Macc2\",\r\n\t\t\"adamesta\":\"0\",\r\n\t\t\"adamsecu\":\"2\",\r\n\t\t\"adampred\":\"1\"\r\n\t},\r\n\t{ \r\n\t\t\"adamidea\":\"3\",\r\n\t\t\"adamdesc\":\"MACC3\",\r\n\t\t\"adamsigl\":\"postman Macc3\",\r\n\t\t\"adamesta\":\"1\",\r\n\t\t\"adamsecu\":\"2\",\r\n\t\t\"adampred\":\"0\"\r\n\t}\r\n]\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "[ \r\n\t{ \r\n\t\t\"adamidea\":\"1\",\r\n\t\t\"adamdesc\":\"postman MACC1\",\r\n\t\t\"adamsigl\":\"postman Macc1\",\r\n\t\t\"adamesta\":\"1\",\r\n\t\t\"adamsecu\":\"1\",\r\n\t\t\"adampred\":\"0\"\r\n\t},\r\n\t{ \r\n\t\t\"adamidea\":\"2\",\r\n\t\t\"adamdesc\":\"MACC2\",\r\n\t\t\"adamsigl\":\"Macc2\",\r\n\t\t\"adamesta\":\"0\",\r\n\t\t\"adamsecu\":\"2\",\r\n\t\t\"adampred\":\"1\"\r\n\t},\r\n\t{ \r\n\t\t\"adamidea\":\"3\",\r\n\t\t\"adamdesc\":\"MACC3\",\r\n\t\t\"adamsigl\":\"postman Macc3\",\r\n\t\t\"adamesta\":\"1\",\r\n\t\t\"adamsecu\":\"2\",\r\n\t\t\"adampred\":\"0\"\r\n\t}\r\n]\r\n"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_003/actualizar-auxiliar-sub/90/1",
@@ -1657,7 +1617,6 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1909,12 +1868,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "[ \n\t{\n      \"adpicori\": \"20\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"21\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"22\",\n      \"adpiatr1\": 2\n    },\n    {\n      \"adpicori\": \"31\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"32\",\n      \"adpiatr1\": true\n    },\n    {\n      \"adpicori\": \"34\",\n      \"adpiatr2\": \"-\"\n    },\n    {\n      \"adpicori\": \"35\",\n      \"adpiatr2\": \"-\"\n    },\n    {\n      \"adpicori\": \"36\",\n      \"adpiatr2\": \"-\"\n    },\n    {\n      \"adpicori\": \"37\",\n      \"adpiatr1\": \"6\"\n    },\n    {\n      \"adpicori\": \"41\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"42\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"43\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"44\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"45\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"46\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"61\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"62\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"63\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"64\",\n      \"adpiatr2\": \"-\"\n    },\n    {\n      \"adpicori\": \"65\",\n      \"adpiatr1\": 6\n    },\n    {\n      \"adpicori\": \"71\",\n      \"adpiatr1\": true\n    },\n    {\n      \"adpicori\": \"72\",\n      \"adpiatr1\": 6\n    },\n    {\n      \"adpicori\": \"81\",\n      \"adpiatr2\": \"unidad de costo\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"82\",\n      \"adpiatr2\": \"centro de costo\",\n      \"adpiatr1\": 2\n    },\n    {\n      \"adpicori\": \"83\",\n      \"adpiatr2\": \"\",\n      \"adpiatr1\": 3\n    },\n    {\n      \"adpicori\": \"84\",\n      \"adpiatr2\": \"\",\n      \"adpiatr1\": 4\n    },\n    {\n      \"adpicori\": \"85\",\n      \"adpiatr2\": \"\",\n      \"adpiatr1\": 5\n    },\n    {\n      \"adpicori\": \"86\",\n      \"adpiatr2\": \"\",\n      \"adpiatr1\": 6\n    }\n]",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "[ \n\t{\n      \"adpicori\": \"20\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"21\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"22\",\n      \"adpiatr1\": 2\n    },\n    {\n      \"adpicori\": \"31\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"32\",\n      \"adpiatr1\": true\n    },\n    {\n      \"adpicori\": \"34\",\n      \"adpiatr2\": \"-\"\n    },\n    {\n      \"adpicori\": \"35\",\n      \"adpiatr2\": \"-\"\n    },\n    {\n      \"adpicori\": \"36\",\n      \"adpiatr2\": \"-\"\n    },\n    {\n      \"adpicori\": \"37\",\n      \"adpiatr1\": \"6\"\n    },\n    {\n      \"adpicori\": \"41\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"42\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"43\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"44\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"45\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"46\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"61\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"62\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"63\",\n      \"adpiatr1\": false\n    },\n    {\n      \"adpicori\": \"64\",\n      \"adpiatr2\": \"-\"\n    },\n    {\n      \"adpicori\": \"65\",\n      \"adpiatr1\": 6\n    },\n    {\n      \"adpicori\": \"71\",\n      \"adpiatr1\": true\n    },\n    {\n      \"adpicori\": \"72\",\n      \"adpiatr1\": 6\n    },\n    {\n      \"adpicori\": \"81\",\n      \"adpiatr2\": \"unidad de costo\",\n      \"adpiatr1\": 1\n    },\n    {\n      \"adpicori\": \"82\",\n      \"adpiatr2\": \"centro de costo\",\n      \"adpiatr1\": 2\n    },\n    {\n      \"adpicori\": \"83\",\n      \"adpiatr2\": \"\",\n      \"adpiatr1\": 3\n    },\n    {\n      \"adpicori\": \"84\",\n      \"adpiatr2\": \"\",\n      \"adpiatr1\": 4\n    },\n    {\n      \"adpicori\": \"85\",\n      \"adpiatr2\": \"\",\n      \"adpiatr1\": 5\n    },\n    {\n      \"adpicori\": \"86\",\n      \"adpiatr2\": \"\",\n      \"adpiatr1\": 6\n    }\n]"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_004/put-paraminicial/2018",
@@ -1969,7 +1923,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2026,12 +1979,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"codigo\": \"USUARIO\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "{\n\t\"codigo\": \"USUARIO\"\n}"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_005/inicializar-pass",
@@ -2047,7 +1995,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2181,12 +2128,6 @@
 											"key": "id_persona",
 											"value": "1360",
 											"type": "text"
-										},
-										{
-											"key": "",
-											"value": "",
-											"type": "text",
-											"disabled": true
 										}
 									]
 								},
@@ -2325,7 +2266,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2388,12 +2328,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678,\r\n\t\"logo_url\": \"aqui deberia ir el logo\"\r\n}\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "\r\n{\r\n\t\"direcciones\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_direccion\":1,\r\n\t\t\t\t\"direccion\":\"TEST\",\r\n\t\t\t\t\"estado\":1,\r\n\t\t\t\t\"id_ciudad\":\"0010201\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"contactos\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t},\r\n\t\t\t{ \r\n\t\t\t\t\"id_tipo_contacto\":33,\r\n\t\t\t\t\"id_subtipo_contacto\":1,\r\n\t\t\t\t\"codigo_contacto\":\"+591\",\r\n\t\t\t\t\"contacto\": \"TEST\",\r\n\t\t\t\t\"estado\":1\r\n\t\t\t}\r\n\t\t],\r\n\t\"razon_social\": \"ORMATE S.R.L.\",\r\n\t\"sigla\": \"ORMATE S.R.L.\",\r\n\t\"id_actividad\": 1,\r\n\t\"nit\": 2345678,\r\n\t\"logo_url\": \"aqui deberia ir el logo\"\r\n}\r\n"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_007/insert-datos-empresa",
@@ -2479,7 +2414,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2526,7 +2460,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2721,7 +2654,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2777,12 +2709,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n\t\"estructuras\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"nombre\":\"TEST2\",\r\n\t\t\t\t\"largo\":2,\r\n\t\t\t\t\"separador\":\"-\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"naturalezas\":\r\n\t\t[ \r\n\t\t\t\r\n\t\t]\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "\r\n{\r\n\t\"estructuras\":\r\n\t\t[ \r\n\t\t\t{ \r\n\t\t\t\t\"nombre\":\"TEST2\",\r\n\t\t\t\t\"largo\":2,\r\n\t\t\t\t\"separador\":\"-\"\r\n\t\t\t}\r\n\t\t],\r\n\t\"naturalezas\":\r\n\t\t[ \r\n\t\t\t\r\n\t\t]\r\n}"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_010/insert-parametros-iniciales/2019",
@@ -2817,12 +2744,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "\n{\n\t\"estructuras\":\n\t\t[ \n\t\t\t{ \n\t\t\t\t\"id_estructura\":25,\n\t\t\t\t\"nombre\":\"CUENTAUPDATE\",\n\t\t\t\t\"largo\":3,\n\t\t\t\t\"separador\":\"-\"\n\t\t\t}\n\t\t],\n\t\"naturalezas\":\n\t\t[ \n\t\t\t\n\t\t]\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "\n{\n\t\"estructuras\":\n\t\t[ \n\t\t\t{ \n\t\t\t\t\"id_estructura\":25,\n\t\t\t\t\"nombre\":\"CUENTAUPDATE\",\n\t\t\t\t\"largo\":3,\n\t\t\t\t\"separador\":\"-\"\n\t\t\t}\n\t\t],\n\t\"naturalezas\":\n\t\t[ \n\t\t\t\n\t\t]\n}"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_010/update-parametros-iniciales/2019",
@@ -2870,7 +2792,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2928,12 +2849,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"id_modulo\": 90,\n\t\"id_documento\": \"10\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"componente\": \"adm_test\",\n\t\"estado\": true\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "{\n\t\"id_modulo\": 90,\n\t\"id_documento\": \"10\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"componente\": \"adm_test\",\n\t\"estado\": true\n}"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_011/insert-clase-documentos",
@@ -3027,7 +2943,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3116,12 +3031,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"id_modulo\": 10,\n\t\"id_formato\": \"auto\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"tamaño_impresion\": 2,\n\t\"moneda\": 1,\n\t\"codigo_cuenta\": 3,\n\t\"numero_copias\": 3,\n\t\"codigo_qr\": true,\n\t\"logo_empresa\": true,\n\t\"estado\": true\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "{\n\t\"id_modulo\": 10,\n\t\"id_formato\": \"auto\",\n\t\"descripcion\": \"TEST\",\n\t\"sigla\": \"TEST\",\n\t\"tamaño_impresion\": 2,\n\t\"moneda\": 1,\n\t\"codigo_cuenta\": 3,\n\t\"numero_copias\": 3,\n\t\"codigo_qr\": true,\n\t\"logo_empresa\": true,\n\t\"estado\": true\n}"
 								},
 								"url": {
 									"raw": "{{url}}adm_000/adm_012/insert-formatos-impresion",
@@ -3203,7 +3113,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3374,11 +3283,9 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "CON_000",
@@ -3408,12 +3315,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\": \"1\"\n\t\t\t}\n\t\t]\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
+									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\": \"1\"\n\t\t\t}\n\t\t]\n}"
 								},
 								"url": {
 									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/2019/all_data",
@@ -3568,7 +3470,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3770,7 +3671,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3940,7 +3840,6 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3963,7 +3862,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_005/get-tipos-comprobantes/10/1/10/all_data",
+									"raw": "{{url}}con_000/con_005/get-tipos-comprobantes/10/1/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3972,7 +3871,6 @@
 										"get-tipos-comprobantes",
 										"10",
 										"1",
-										"10",
 										"all_data"
 									]
 								}
@@ -4111,12 +4009,9 @@
 							"response": []
 						}
 					],
-					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
