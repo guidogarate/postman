@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5b947ea0-a95a-4a71-a38f-6de3207f87bd",
+		"_postman_id": "86d0fa7c-b728-42e2-b48a-d1c5af45e01d",
 		"name": "sageDesa",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -2814,7 +2814,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_011/get-clase-documentos/90/1/0/all_data",
+									"raw": "{{url}}adm_000/adm_011/get-clase-documentos/90/1/0/10/all_data",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -2824,6 +2824,7 @@
 										"90",
 										"1",
 										"0",
+										"10",
 										"all_data"
 									]
 								}
@@ -2965,7 +2966,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}adm_000/adm_012/get-formatos-impresion/90/1/0/all_data",
+									"raw": "{{url}}adm_000/adm_012/get-formatos-impresion/90/1/0/10/all_data",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -2975,6 +2976,7 @@
 										"90",
 										"1",
 										"0",
+										"10",
 										"all_data"
 									]
 								}
@@ -3318,7 +3320,7 @@
 									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\": \"1\"\n\t\t\t}\n\t\t]\n}"
 								},
 								"url": {
-									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/2019/all_data",
+									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/2019/10/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3328,6 +3330,7 @@
 										"10",
 										"1",
 										"2019",
+										"10",
 										"all_data"
 									]
 								}
@@ -3862,7 +3865,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_005/get-tipos-comprobantes/10/1/all_data",
+									"raw": "{{url}}con_000/con_005/get-tipos-comprobantes/10/1/10/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3871,6 +3874,7 @@
 										"get-tipos-comprobantes",
 										"10",
 										"1",
+										"10",
 										"all_data"
 									]
 								}
@@ -4003,6 +4007,36 @@
 										"delete-tipo-comprobante",
 										"10",
 										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_getpdftiposcomporbantes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_005/get-pdf/10",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_005",
+										"get-pdf",
+										"10"
 									]
 								}
 							},
