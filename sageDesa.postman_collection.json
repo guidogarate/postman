@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "86d0fa7c-b728-42e2-b48a-d1c5af45e01d",
+		"_postman_id": "bb597d20-ff3b-45a6-bb67-5371691ed703",
 		"name": "sageDesa",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -302,6 +302,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -564,9 +565,11 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "ADM_000",
@@ -952,6 +955,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1286,6 +1290,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1617,6 +1622,7 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1923,6 +1929,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1995,6 +2002,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2266,6 +2274,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2414,6 +2423,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2460,6 +2470,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2654,6 +2665,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2792,6 +2804,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2886,7 +2899,7 @@
 									"raw": "{\n\t\"descripcion\": \"TESTACTUA\",\n\t\"sigla\": \"TESTACTUA\",\n\t\"componente\": \"con_TESTACTUA\",\n\t\"estado\": false\n}"
 								},
 								"url": {
-									"raw": "{{url}}adm_000/adm_011/update-clase-documentos/10/4?",
+									"raw": "{{url}}adm_000/adm_011/update-clase-documentos/10/4",
 									"host": [
 										"{{url}}adm_000"
 									],
@@ -2942,8 +2955,66 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "005_getpdfclasedocumentos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/pdf",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_011/get-pdf/90/0",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_011",
+										"get-pdf",
+										"90",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_getexcelclasedocumentos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_011/get-excel/90/0",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_011",
+										"get-excel",
+										"90",
+										"0"
+									]
+								}
+							},
+							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3115,6 +3186,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3285,9 +3357,11 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "CON_000",
@@ -3473,6 +3547,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3653,7 +3728,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_003/delete-unidades-organicas/2020002010?",
+									"raw": "{{url}}con_000/con_003/delete-unidades-organicas/2020002010",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3674,6 +3749,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3843,6 +3919,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4019,7 +4096,7 @@
 								"header": [
 									{
 										"key": "Content-Type",
-										"value": "application/x-www-form-urlencoded",
+										"value": "application/pdf",
 										"type": "text"
 									},
 									{
@@ -4041,11 +4118,44 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "007_getexceltiposcomprobantes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_005/get-excel/10",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_005",
+										"get-excel",
+										"10"
+									]
+								}
+							},
+							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
