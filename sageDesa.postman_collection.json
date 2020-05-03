@@ -3184,6 +3184,58 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "006_getpdfformatosimpresion",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_012/get-pdf/90/0",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_012",
+										"get-pdf",
+										"90",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "007_getexcelformatoimpresion",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_012/get-excel/90/0",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_012",
+										"get-excel",
+										"90",
+										"0"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"protocolProfileBehavior": {},
@@ -3351,6 +3403,70 @@
 										"delete-tipos-transaccion",
 										"10",
 										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_getpdftipotransaccion",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/pdf",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_013/get-pdf/90/0",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_013",
+										"get-pdf",
+										"90",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "007_getexceltipostransacciones",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_013/get-excel/90/0",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_013",
+										"get-excel",
+										"90",
+										"0"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
 									]
 								}
 							},
