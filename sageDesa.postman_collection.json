@@ -3510,7 +3510,7 @@
 									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\": \"1\"\n\t\t\t}\n\t\t]\n}"
 								},
 								"url": {
-									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/2019/10/all_data",
+									"raw": "{{url}}con_000/con_002/get-catalogo-cuentas/10/1/0/50/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3519,8 +3519,8 @@
 										"get-catalogo-cuentas",
 										"10",
 										"1",
-										"2019",
-										"10",
+										"0",
+										"50",
 										"all_data"
 									]
 								}
@@ -3544,7 +3544,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_002/get-cuentas/10/501000",
+									"raw": "{{url}}con_000/con_002/get-cuentas/10/10000000",
 									"host": [
 										"{{url}}con_000"
 									],
@@ -3552,7 +3552,7 @@
 										"con_002",
 										"get-cuentas",
 										"10",
-										"501000"
+										"10000000"
 									]
 								}
 							},
@@ -3657,6 +3657,89 @@
 										"delete-cuentas",
 										"2019",
 										"1010101000"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_getpdfcatalogodecuentas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\": \"1\"\n\t\t\t}\n\t\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_002/get-pdf/10/0/all_data",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_002",
+										"get-pdf",
+										"10",
+										"0",
+										"all_data"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "007_getexcelcatalogodecuentas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"filtro\":\n\t\t[\n\t\t\t{\n\t\t\t\t\"id_naturaleza\": \"1\"\n\t\t\t}\n\t\t]\n}"
+								},
+								"url": {
+									"raw": "{{url}}con_000/con_002/get-excel/10/0/all_data",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_002",
+										"get-excel",
+										"10",
+										"0",
+										"all_data"
 									]
 								}
 							},
