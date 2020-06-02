@@ -3952,6 +3952,70 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "005_getpdfunidadesorganicas",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_003/get-pdf/10/0/all_data",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_003",
+										"get-pdf",
+										"10",
+										"0",
+										"all_data"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "006_getexcelunidadesorganicas",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}con_000/con_003/get-excel/10/0/all_data",
+									"host": [
+										"{{url}}con_000"
+									],
+									"path": [
+										"con_003",
+										"get-excel",
+										"10",
+										"0",
+										"all_data"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"protocolProfileBehavior": {},
@@ -4311,14 +4375,15 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_005/get-pdf/10",
+									"raw": "{{url}}con_000/con_005/get-pdf/10/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
 									"path": [
 										"con_005",
 										"get-pdf",
-										"10"
+										"10",
+										"all_data"
 									]
 								}
 							},
@@ -4341,14 +4406,15 @@
 									}
 								],
 								"url": {
-									"raw": "{{url}}con_000/con_005/get-excel/10",
+									"raw": "{{url}}con_000/con_005/get-excel/10/all_data",
 									"host": [
 										"{{url}}con_000"
 									],
 									"path": [
 										"con_005",
 										"get-excel",
-										"10"
+										"10",
+										"all_data"
 									]
 								}
 							},
