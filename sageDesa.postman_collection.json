@@ -3014,6 +3014,38 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "007_getimpresionclasedocumentos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}adm_000/adm_011/get-impresion/90/0/all_data",
+									"host": [
+										"{{url}}adm_000"
+									],
+									"path": [
+										"adm_011",
+										"get-impresion",
+										"90",
+										"0",
+										"all_data"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"protocolProfileBehavior": {},
